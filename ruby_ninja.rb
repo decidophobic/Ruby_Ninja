@@ -16,8 +16,8 @@ end
 
 prompt; ninja = gets.chomp
 
-if (0..2) === ninja.to_i
+if ("0".."2") === ninja 
 	puts "Congratulations! You have chosen the #{ninjas[ninja.to_i]}!"
 else
-	puts "You clearly do not know how to follow instructions. The game is over. Good job."
+	puts "You trip on a rock and fall face-first on a shuriken and die. The game is over."
 end
