@@ -1,12 +1,12 @@
 def prompt
-	puts ">> "
+	print ">> "
 end
 
 ninjas = ["Blue Ninja", "Red Ninja", "Yellow Ninja"]
 
 puts "Welcome to Ruby Ninja!"
 puts
-puts "Please choose the number corresponding to your ninja:"
+puts "Please select a ninja by number:"
 
 n = 0
 while n < ninjas.count
@@ -14,7 +14,10 @@ while n < ninjas.count
 	n += 1
 end
 
-puts
 prompt; ninja = gets.chomp
 
-puts "Congratulations! You have chosen the #{ninjas[ninja.to_i]}!"
+if (0..2) === ninja.to_i
+	puts "Congratulations! You have chosen the #{ninjas[ninja.to_i]}!"
+else
+	puts "You clearly do not know how to follow instructions. The game is over. Good job."
+end
