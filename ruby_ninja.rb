@@ -1,4 +1,7 @@
-prompt = ">> "
+def prompt
+	puts ">> "
+end
+
 ninjas = ["Blue Ninja", "Red Ninja", "Yellow Ninja"]
 
 puts "Welcome to Ruby Ninja!"
@@ -12,6 +15,6 @@ while n < ninjas.count
 end
 
 puts
-print prompt; ninja = gets.chomp
+prompt; ninja = gets.chomp
 
 puts "Congratulations! You have chosen the #{ninjas[ninja.to_i]}!"
